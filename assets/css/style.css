@@ -37,6 +37,19 @@
 
 
 
+/*************************Psudo*****************************/
+a:link, a:visited {
+
+
+  }
+  
+  a:hover{
+    color: var(--header-bg-col);
+    background-color: var(--header-name-col);
+    transition: all 0.5s ease;
+
+  }
+
 
   /* Media Query Code */
 
