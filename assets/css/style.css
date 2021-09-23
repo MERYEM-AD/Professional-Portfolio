@@ -28,8 +28,40 @@
 
   }
 
-  nav a{
+ a {
     color:var(--header-name-col);
-    margin-right: 50px;
+    padding: 20px;
+    text-decoration: none;
 
   }
+
+
+
+
+  /* Media Query Code */
+
+  @media screen and (max-width: 964px) {
+
+
+    .header {
+        padding: 0;
+        flex-direction: column;
+        text-align:  center;
+        align-items: unset;
+        }
+
+
+    nav{
+        background-color: var(--header-bg-col);
+        display: flex; /* used in this case to leave the links in row level and not change to colum*/
+        justify-content: center;
+         /*center links as items*/
+
+          }
+         
+      
+        }
+
+     
+              
+              
