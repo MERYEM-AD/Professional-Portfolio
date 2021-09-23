@@ -1,0 +1,35 @@
+/* Declaring global CSS variables */
+:root {
+    --base:#F0FFFF;
+    --header-bg-col:#2f4f4f;
+    --header-name-col :#00FFFF;
+
+
+  }
+
+
+  .header{
+    background-color:var(--header-bg-col);
+    display: flex;
+    flex-direction: row; /* Default*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+
+  h1{
+
+    color: var(--header-bg-col);
+    background-color: var(--header-name-col);
+    font-size: 30px;
+    padding: 10px 10px 10px 40px;
+    margin-left: -22px;
+
+  }
+
+  nav a{
+    color:var(--header-name-col);
+    margin-right: 50px;
+
+  }
