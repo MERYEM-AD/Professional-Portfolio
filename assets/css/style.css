@@ -1,8 +1,14 @@
 /* Declaring global CSS variables */
-:root {
+:root { 
+    /*Colors*/
     --base:#F0FFFF;
     --header-bg-col:#2f4f4f;
     --header-name-col :#00FFFF;
+    /*Borders*/
+    --border-left-sd:5px solid var(--header-bg-col);
+
+
+
 
 
   }
@@ -32,6 +38,8 @@
     color:var(--header-name-col);
     padding: 20px;
     text-decoration: none;
+    border-bottom: 1px solid var(--header-name-col);
+    padding-bottom: 8px;
 
   }
     /************************** Cover image ******************************/
@@ -70,7 +78,36 @@
     margin: 10px 30px;
 }
   
-    /**************************************************************************/
+    /******************************* main *******************************************/
+
+    .About-me{
+      display: flex;
+      justify-content: center;
+      /* flex: 2 0 50px; */
+      padding: 50px;
+      align-items: flex-start;
+    }
+
+
+    .About-me h2{
+      font-size: 25px;
+      color: var(--header-bg-col);
+
+
+    }
+
+    .About-me p {
+      border-left: 5px solid var(--header-bg-col);
+      width: 50%;
+    }
+
+
+
+
+ 
+
+    /**********************************************************************************/
+
 
 /*************************Psudo*****************************/
 a:link, a:visited {
@@ -80,8 +117,14 @@ a:link, a:visited {
   
   a:hover{
     color: var(--header-bg-col);
-    background-color: var(--header-name-col);
+    /* background-color: var(--header-name-col); */ 
     transition: all 0.5s ease;
+
+    background: linear-gradient(to left, var(--header-name-col) 50%, var(--header-bg-col) 50%) right;
+    background-size: 200%;
+    
+    transition: .5s ease-out;
+    /* background-position: left; */
 
   }
 
@@ -113,7 +156,27 @@ a:link, a:visited {
         align-items: center;
 
     }
+                     /**********************************  Main **************************************/
     
+
+    .About-me{
+
+      flex-direction: column;
+    }
+    .About-me > h2 {
+
+      border-bottom: 5px solid var(--header-bg-col);
+
+      width: 100%;
+              
+                  }
+
+    .About-me > p {
+
+          border-left: none;
+          width: 100%;
+                            
+                  }
       
         }
 
