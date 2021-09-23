@@ -34,8 +34,43 @@
     text-decoration: none;
 
   }
+    /************************** Cover image ******************************/
+
+#cover-img{
+      /* background-color: red;
+  color: white;
+/*  */
+   background-image: url(../images/cover.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 30vh;
+   background-attachment: fixed; 
+        /*Turn this section to flexbox */
 
 
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+
+   /* display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+   flex-direction: column-reverse; */ 
+ 
+   /* background-color: red; */
+   /* color: white;
+   height: 320px;
+   display: flex;
+   flex-direction: row-reverse;
+   flex-wrap: wrap;
+   align-items: flex-end; */
+}
+#subtitle{
+    margin: 10px 30px;
+}
+  
+    /**************************************************************************/
 
 /*************************Psudo*****************************/
 a:link, a:visited {
@@ -71,7 +106,14 @@ a:link, a:visited {
          /*center links as items*/
 
           }
-         
+
+    #cover-img{
+
+        justify-content: center;
+        align-items: center;
+
+    }
+    
       
         }
 
