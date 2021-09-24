@@ -281,15 +281,15 @@ a:link, a:visited {
           padding-top: 25px;
                             
                   }
-
-
-
-
-                  .Contact nav{
+      .Contact nav{
           
-                    flex-direction: column;
+          flex-direction: column;
                   
                       }
+
+        .content{
+          max-width: none;
+        }
       
         }
 
