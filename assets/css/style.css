@@ -12,6 +12,24 @@
 
 
   }
+  tml {
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
+  }
+  
+  body {
+    /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  
+    /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--header-bg-col);
+    /* color: var(--gin);
+    background-color: var(--outer-space); */
+  }
+  
 
 
   .header{
@@ -80,18 +98,24 @@
   
     /******************************* main *******************************************/
 
-    .About-me{
+    .rows{
+
       display: flex;
       justify-content: center;
       /* flex: 2 0 50px; */
       padding: 50px;
       align-items: flex-start;
+
+    }
+    .About-me{
+
     }
 
 
-    .About-me h2{
-      font-size: 25px;
+    .rows h2{
+      font-size: 40px;
       color: var(--header-bg-col);
+      margin-right: 25px;
 
 
     }
@@ -99,8 +123,48 @@
     .About-me p {
       border-left: 5px solid var(--header-bg-col);
       width: 50%;
+      padding-left: 25px;
     }
 
+
+
+    .Work{
+
+      display: flex;
+
+    }
+    .projects{
+      /* flex: 1; */
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+
+    }
+
+.boxes:nth-of-type(1) {
+  flex-grow: 50;
+
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  width: 100px; height: 100px;
+}
+    
+.boxes {
+  flex-grow: 25;
+
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+
+  width: 100px; height: 100px;
+}
+    
+
+   
 
 
 
@@ -159,11 +223,11 @@ a:link, a:visited {
                      /**********************************  Main **************************************/
     
 
-    .About-me{
+    .rows{
 
       flex-direction: column;
     }
-    .About-me > h2 {
+    .rows > h2 {
 
       border-bottom: 5px solid var(--header-bg-col);
 
@@ -175,6 +239,8 @@ a:link, a:visited {
 
           border-left: none;
           width: 100%;
+          padding-left: 0;
+          padding-top: 25px;
                             
                   }
       
