@@ -12,7 +12,7 @@
 
 
   }
-  tml {
+  html {
     /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
     font-size: 62.5%;
   }
@@ -52,13 +52,28 @@
 
   }
 
- a {
+.header a {
     color:var(--header-name-col);
     padding: 20px;
     text-decoration: none;
     border-bottom: 1px solid var(--header-name-col);
     padding-bottom: 8px;
 
+  }
+
+  .Contact a {
+    color:var(--header-bg-col);
+    padding: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--header-bg-col);
+    padding-bottom: 8px;
+    font-size: 15px;
+    margin: 10px;
+
+  }
+  .Work .content{
+
+ 
   }
     /************************** Cover image ******************************/
 
@@ -104,7 +119,8 @@
       justify-content: center;
       /* flex: 2 0 50px; */
       padding: 50px;
-      align-items: flex-start;
+      /* align-items: flex-start;
+      max-width: 90%; */
 
     }
     .About-me{
@@ -120,49 +136,48 @@
 
     }
 
-    .About-me p {
+    .rows .content {
       border-left: 5px solid var(--header-bg-col);
-      width: 50%;
+      /* width: 50%; */
       padding-left: 25px;
+    }
+
+    .content{
+
+      max-width: 50%;
+      font-size: 15px;
     }
 
 
 
     .Work{
 
-      display: flex;
-
-    }
-    .projects{
-      /* flex: 1; */
-      background-color: #fff;
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
+      /* display: flex; */
 
     }
 
-.boxes:nth-of-type(1) {
-  flex-grow: 50;
+
+/* .boxes:nth-of-type(1) {
+  /* flex-grow: 50; 
 
   border-style: solid;
   border-width: 1px;
   padding: 10px;
   width: 100px; height: 100px;
-}
+} */
     
 .boxes {
-  flex-grow: 25;
+  /* flex-grow: 25; */
+  background: url("../images/python.jpg") no-repeat;
+
 
   border-style: solid;
   border-width: 1px;
   padding: 10px;
 
-  width: 100px; height: 100px;
 }
     
+
 
    
 
@@ -179,7 +194,7 @@ a:link, a:visited {
 
   }
   
-  a:hover{
+  .header a:hover{
     color: var(--header-bg-col);
     /* background-color: var(--header-name-col); */ 
     transition: all 0.5s ease;
@@ -187,10 +202,33 @@ a:link, a:visited {
     background: linear-gradient(to left, var(--header-name-col) 50%, var(--header-bg-col) 50%) right;
     background-size: 200%;
     
-    transition: .5s ease-out;
+    /* transition: .5s ease-out; */
     /* background-position: left; */
 
   }
+
+  .Contact nav{
+          
+    display: flex; /* used in this case to leave the links in row level and not change to colum*/
+    justify-content: center;
+
+  
+      }
+
+  .Contact a:hover{
+    color: var(--header-name-col);
+    /* background-color: var(--header-name-col); */ 
+    transition: all 0.5s ease;
+
+    background: linear-gradient(to left, var(--header-bg-col) 50%, var(--header-name-col) 50%) right;
+    background-size: 200%;
+    
+    /* transition: .5s ease-out; */
+    /* background-position: left; */
+
+  }
+
+
 
 
   /* Media Query Code */
@@ -206,7 +244,7 @@ a:link, a:visited {
         }
 
 
-    nav{
+    .header nav{
         background-color: var(--header-bg-col);
         display: flex; /* used in this case to leave the links in row level and not change to colum*/
         justify-content: center;
@@ -235,7 +273,7 @@ a:link, a:visited {
               
                   }
 
-    .About-me > p {
+    .rows> .content {
 
           border-left: none;
           width: 100%;
@@ -243,9 +281,20 @@ a:link, a:visited {
           padding-top: 25px;
                             
                   }
+
+
+
+
+                  .Contact nav{
+          
+                    flex-direction: column;
+                  
+                      }
       
         }
 
-     
+
+
+        
               
-              
+          
