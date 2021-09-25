@@ -52,7 +52,7 @@
 
   }
 
-.header a {
+  .header a {
     color:var(--header-name-col);
     padding: 20px;
     text-decoration: none;
@@ -63,7 +63,7 @@
 
     /************************** Cover image ******************************/
 
-#cover-img{
+  #cover-img{
 
    background-image: url(../images/cover.jpg);
    background-position: center;
@@ -78,191 +78,126 @@
         flex-direction: row-reverse;
         align-items: flex-end;
 
-}
-#subtitle{
+  }
+   
+  #subtitle{
     margin: 10px 30px;
-}
+  }
   
     /******************************* main *******************************************/
 
 
-    .flex-container{
+  .flex-container{
       padding: 80px;
   
-    }
+  }
   
 
-    .rows{
+  .rows{
 
       display: flex;
       margin: 50px;;
-      /* justify-content: center; */
-      /* flex: 2 0 50px; */
-      /* padding: 50px; */
-      /* align-items: flex-start;
-      max-width: 90%; */
 
     }
 
-    .rows h2{
+  .rows h2{
       font-size: 24px;
       color: var(--header-bg-col);
       margin-right: 25px;
       width: 20%;
+  }
 
-
-
-    }
-
-    .rows > .content  {
+  .rows > .content  {
       border-left: 5px solid var(--header-bg-col);
-      /* width: 50%; */
       padding-left: 25px;
-    }
+  }
 
-    .content{
+  .content{
 
       width:80%;
       font-size: 15px;
-      /* border-right: 5px solid red; */
-    }
+  }
 
 
+  .projects{
+
+   display: flex;
+   flex-wrap: wrap-reverse;
+   flex-direction: row-reverse;
+    justify-content: center;
+
+  }
+  .subject{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 30vh;
+    width: 200px;
+    margin: 10px;
+    flex-basis: 40%;
+  }
 
 
-/* .boxes:nth-of-type(1) {
-  /* flex-grow: 50; 
+  .project_1 {
 
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px;
-  width: 100px; height: 100px;
-} */
+   background-image: url("../images/php.jpg");
+   }
 
-/* h4{
-  border: 1px solid tomato;
-} */
-
-
-
-
-.projects{
-  /* background-color: blue; */
-  display: flex;
-  flex-wrap: wrap-reverse;
-  flex-direction: row-reverse;
-  justify-content: center;
-
-}
-
-
-
-
-
-
-.project_1 {
-
-
-  background-image: url("../images/php.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 30vh;
-  width: 200px;
-  margin: 10px;
-  /* background-color: yellow; */
-  flex-basis: 40%;
-      /* max-width: 100%;
-    max-height: 100%; */
-  /* flex: 1 0 80%; */
-
- 
-
-
-}
-
-.project_2 {
-
+  .project_2 {
 
   background-image: url("../images/c_sharp.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 30vh;
-  width: 200px;
-  margin: 10px;
-  /* background-color: red; */
-  flex-basis: 40%;
+
+  }
 
 
-}
-
-/* div:nth-child(3) {
-  
-} */
-.project_3{
-
+  .project_3{
 
   background-image: url("../images/python.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 30vh;
-  width: 200px;
-  margin: 10px;
+  }
 
-  /* background-color: purple; */
-  flex-basis: 40%;
-}
-.project_4 {
+  .project_4 {
 
 
   background-image: url("../images/js.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 30vh;
-  width: 200px;
-  margin: 10px;
-  /* background-color: black; */
-  flex-basis: 40%;
 
-}
-.project_5 {
+  }
+  .project_5 {
 
 
   background-image: url("../images/java.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 30vh;
-  width: 200px;
-  margin: 10px;
-  /* background-color: green; */
   flex: 1 0 80%;
-  
+  }
 
-}
-    
 
-.Contact nav{
+  .subject .header_proj5{
+  position: relative;
+  }  
+
+  .header_proj5{
+  color: var(--header-bg-col);
+  background-color: var(--header-name-col);
+  width: 95px;
+  height: 33px;
+  text-align: center;
+  right: 1px;
+  }
+
+  .Contact nav{
           
   display: flex; /* used in this case to leave the links in row level and not change to colum*/
   justify-content: space-between;
   flex-wrap: wrap;
-
-
-    }
+   }
    
-.Contact a {
+  .Contact a {
   color:var(--header-bg-col);
   padding: 20px;
   text-decoration: none;
   box-shadow:0 5px 3px -3px  var(--header-bg-col);
   font-size: 15px;
-  /* margin: 10px; */
 
-}
+  }
 
 
  
@@ -274,15 +209,11 @@
   
   .header a:hover{
     color: var(--header-bg-col);
-    /* background-color: var(--header-name-col); */ 
     transition: all 0.5s ease;
 
     background: linear-gradient(to left, var(--header-name-col) 50%, var(--header-bg-col) 50%) right;
     background-size: 200%;
     cursor: grab;
-    
-    /* transition: .5s ease-out; */
-    /* background-position: left; */
 
   }
 
@@ -290,15 +221,13 @@
 
   .Contact a:hover{
     color: var(--header-name-col);
-    /* background-color: var(--header-name-col); */ 
+
     transition: all 0.5s ease;
 
     background: linear-gradient(to left, var(--header-bg-col) 50%, var(--header-name-col) 50%) right;
     background-size: 200%;
     cursor: grab;
     
-    /* transition: .5s ease-out; */
-    /* background-position: left; */
 
   }
   .projects *:hover{
@@ -314,67 +243,70 @@
   @media screen and (max-width: 964px) {
 
 
-    .header {
-        padding: 0;
-        flex-direction: column;
-        text-align:  center;
-        align-items: unset;
-        }
+  .header {
+
+    padding: 0;
+    flex-direction: column;
+    text-align:  center;
+    align-items: unset;
+
+  }
 
 
-    .header nav{
-        background-color: var(--header-bg-col);
-        display: flex; /* used in this case to leave the links in row level and not change to colum*/
-        justify-content: center;
-        margin-bottom: 15px;
-         /*center links as items*/
+  .header nav{
 
-          }
+    background-color: var(--header-bg-col);
+    display: flex; /* used in this case to leave the links in row level and not change to colum*/
+    justify-content: center;
+    margin-bottom: 15px;
 
-    #cover-img{
+    }
 
-        justify-content: center;
-        align-items: center;
+  #cover-img{
+
+    justify-content: center;
+    align-items: center;
 
     }
                      /**********************************  Main **************************************/
     
 
-    .rows{
+  .rows{
 
-      flex-direction: column;
+    flex-direction: column;
+
     }
-    .rows > h2 {
+
+  .rows > h2 {
 
       border-bottom: 5px solid var(--header-bg-col);
-
       width: 100%;
               
-                  }
+    }
 
-    .rows> .content {
+  .rows> .content { /*remove left border for every content has a parent rows */
 
-          border-left: none;
-          /* width: 100%; */
-          padding-left: 0;
-          padding-top: 25px;
+    border-left: none;
+    padding-left: 0;
+    padding-top: 25px;
                             
-                  }
-      .Contact nav{
+    }
+
+  .Contact nav{
           
-          flex-direction: column;
+     flex-direction: column;
           
                   
-                      }
+    }
 
-  /* projects */
   .projects *{
+
     flex:unset;
   }
 
 
       
-        }
+  }
 
 
 
