@@ -289,7 +289,7 @@
 
   }
   .projects *:hover{
-    box-shadow: 0 0 5px 5px red;
+    box-shadow: 0 0 5px 5px var(--header-name-col);
     transition: all 0.5s ease;
   }
   
