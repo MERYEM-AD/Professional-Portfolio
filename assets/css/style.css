@@ -56,8 +56,7 @@
     color:var(--header-name-col);
     padding: 20px;
     text-decoration: none;
-    border-bottom: 1px solid var(--header-name-col);
-    padding-bottom: 8px;
+    box-shadow:0 5px 3px -3px  var(--header-name-col);
 
   }
 
@@ -145,7 +144,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
+
 
 /* h4{
   border: 1px solid tomato;
@@ -164,7 +165,7 @@
   width: 200px;
   margin: 10px;
   background-color: yellow;
-  flex: 1 0 80%;
+  /* flex: 1 0 80%; */
 
  
 
@@ -185,6 +186,10 @@
 
 
 }
+
+/* div:nth-child(3) {
+  
+} */
 .project_3{
 
 
@@ -227,14 +232,20 @@
 }
     
 
+.Contact nav{
+          
+  display: flex; /* used in this case to leave the links in row level and not change to colum*/
+  justify-content: space-between;
+  flex-wrap: wrap;
 
+
+    }
    
 .Contact a {
   color:var(--header-bg-col);
   padding: 20px;
   text-decoration: none;
-  border-bottom: 1px solid var(--header-bg-col);
-  padding-bottom: 8px;
+  box-shadow:0 5px 3px -3px  var(--header-bg-col);
   font-size: 15px;
   /* margin: 10px; */
 
@@ -243,14 +254,10 @@
 
  
 
-    /**********************************************************************************/
+    
 
 
 /*************************Psudo*****************************/
-a:link, a:visited {
-
-
-  }
   
   .header a:hover{
     color: var(--header-bg-col);
@@ -266,14 +273,7 @@ a:link, a:visited {
 
   }
 
-  .Contact nav{
-          
-    display: flex; /* used in this case to leave the links in row level and not change to colum*/
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-  
-      }
+ 
 
   .Contact a:hover{
     color: var(--header-name-col);
@@ -288,11 +288,15 @@ a:link, a:visited {
     /* background-position: left; */
 
   }
+  .projects *:hover{
+    box-shadow: 0 0 5px 5px red;
+    transition: all 0.5s ease;
+  }
+  
+
+/********************************************** Media Query Code  ************************************/
 
 
-
-
-  /* Media Query Code */
 
   @media screen and (max-width: 964px) {
 
@@ -309,6 +313,7 @@ a:link, a:visited {
         background-color: var(--header-bg-col);
         display: flex; /* used in this case to leave the links in row level and not change to colum*/
         justify-content: center;
+        margin-bottom: 15px;
          /*center links as items*/
 
           }
