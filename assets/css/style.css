@@ -142,30 +142,46 @@
 
 .projects{
   background-color: blue;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+/* h4{
+  border: 1px solid tomato;
+} */
+
+
 
 .project_1 {
 
 
   background-image: url("../images/php.jpg");
   background-repeat: no-repeat;
-  background-size: 710px 444px;
+  background-size: 200px;
   /* background-position: 50% 50%; */
   height: 30vh;
+  width: 200px;
+  margin: 10px;
+  background-color: yellow;
+  flex: 1 0 80%;
+
  
 
 
 }
+
 .project_2 {
 
 
   background-image: url("../images/java.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200px;
   /* background-position: 50% 50%; */
   height: 30vh;
-
+  width: 200px;
+  margin: 10px;
+  background-color: red;
 
 
 }
@@ -174,22 +190,25 @@
 
   background-image: url("../images/python.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200px;
   /* background-position: 50% 50%; */
   height: 30vh;
+  width: 200px;
+  margin: 10px;
 
-
+  background-color: purple;
 }
 .project_4 {
 
 
   background-image: url("../images/js.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200px;
   /* background-position: 50% 50%; */
   height: 30vh;
-
-
+  width: 200px;
+  margin: 10px;
+  background-color: black;
 
 }
 .project_5 {
@@ -197,11 +216,13 @@
 
   background-image: url("../images/c_sharp.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200px;
   /* background-position: 50% 50%; */
   height: 30vh;
-
-
+  width: 200px;
+  margin: 10px;
+  background-color: green;
+  
 
 }
     
@@ -238,6 +259,7 @@ a:link, a:visited {
 
     background: linear-gradient(to left, var(--header-name-col) 50%, var(--header-bg-col) 50%) right;
     background-size: 200%;
+    cursor: grab;
     
     /* transition: .5s ease-out; */
     /* background-position: left; */
@@ -260,6 +282,7 @@ a:link, a:visited {
 
     background: linear-gradient(to left, var(--header-bg-col) 50%, var(--header-name-col) 50%) right;
     background-size: 200%;
+    cursor: grab;
     
     /* transition: .5s ease-out; */
     /* background-position: left; */
