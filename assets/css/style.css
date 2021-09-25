@@ -69,7 +69,7 @@
    background-position: center;
    background-size: cover;
    height: 30vh;
-   background-attachment: fixed; 
+   /* background-attachment: fixed;  */
         /*Turn this section to flexbox */
 
 
@@ -87,7 +87,7 @@
 
 
     .flex-container{
-      padding: 50px;
+      padding: 80px;
   
     }
   
@@ -95,7 +95,7 @@
     .rows{
 
       display: flex;
-      margin: 15px;;
+      margin: 50px;;
       /* justify-content: center; */
       /* flex: 2 0 50px; */
       /* padding: 50px; */
@@ -108,13 +108,13 @@
       font-size: 24px;
       color: var(--header-bg-col);
       margin-right: 25px;
-      width: 10%;
+      width: 20%;
 
 
 
     }
 
-    .rows .content {
+    .rows > .content  {
       border-left: 5px solid var(--header-bg-col);
       /* width: 50%; */
       padding-left: 25px;
@@ -122,7 +122,7 @@
 
     .content{
 
-      width:90%;
+      width:80%;
       font-size: 15px;
       /* border-right: 5px solid red; */
     }
@@ -139,18 +139,24 @@
   width: 100px; height: 100px;
 } */
 
+/* h4{
+  border: 1px solid tomato;
+} */
+
+
+
+
 .projects{
-  background-color: blue;
+  /* background-color: blue; */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
   justify-content: center;
 
 }
 
 
-/* h4{
-  border: 1px solid tomato;
-} */
+
 
 
 
@@ -159,12 +165,15 @@
 
   background-image: url("../images/php.jpg");
   background-repeat: no-repeat;
-  background-size: 200px;
-  /* background-position: 50% 50%; */
+  /* background-size: 200px; */
+  background-position: 50% 50%;
   height: 30vh;
   width: 200px;
   margin: 10px;
-  background-color: yellow;
+  /* background-color: yellow; */
+  flex-basis: 40%;
+      /* max-width: 100%;
+    max-height: 100%; */
   /* flex: 1 0 80%; */
 
  
@@ -175,14 +184,15 @@
 .project_2 {
 
 
-  background-image: url("../images/java.jpg");
+  background-image: url("../images/c_sharp.jpg");
   background-repeat: no-repeat;
-  background-size: 200px;
-  /* background-position: 50% 50%; */
+  /* background-size: 200px; */
+  background-position: 50% 50%;
   height: 30vh;
   width: 200px;
   margin: 10px;
-  background-color: red;
+  /* background-color: red; */
+  flex-basis: 40%;
 
 
 }
@@ -195,38 +205,41 @@
 
   background-image: url("../images/python.jpg");
   background-repeat: no-repeat;
-  background-size: 200px;
-  /* background-position: 50% 50%; */
+  /* background-size: 200px; */
+  background-position: 50% 50%;
   height: 30vh;
   width: 200px;
   margin: 10px;
 
-  background-color: purple;
+  /* background-color: purple; */
+  flex-basis: 40%;
 }
 .project_4 {
 
 
   background-image: url("../images/js.jpg");
   background-repeat: no-repeat;
-  background-size: 200px;
-  /* background-position: 50% 50%; */
+  /* background-size: 200px; */
+  background-position: 50% 50%;
   height: 30vh;
   width: 200px;
   margin: 10px;
-  background-color: black;
+  /* background-color: black; */
+  flex-basis: 40%;
 
 }
 .project_5 {
 
 
-  background-image: url("../images/c_sharp.jpg");
+  background-image: url("../images/java.jpg");
   background-repeat: no-repeat;
-  background-size: 200px;
-  /* background-position: 50% 50%; */
+  background-size: cover;
+  background-position: 50% 50%;
   height: 30vh;
   width: 200px;
   margin: 10px;
-  background-color: green;
+  /* background-color: green; */
+  flex: 1 0 80%;
   
 
 }
@@ -353,6 +366,11 @@
           
                   
                       }
+
+  /* projects */
+  .projects *{
+    flex:unset;
+  }
 
 
       
