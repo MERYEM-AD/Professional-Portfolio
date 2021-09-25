@@ -61,26 +61,11 @@
 
   }
 
-  .Contact a {
-    color:var(--header-bg-col);
-    padding: 20px;
-    text-decoration: none;
-    border-bottom: 1px solid var(--header-bg-col);
-    padding-bottom: 8px;
-    font-size: 15px;
-    margin: 10px;
 
-  }
-  .Work .content{
-
- 
-  }
     /************************** Cover image ******************************/
 
 #cover-img{
-      /* background-color: red;
-  color: white;
-/*  */
+
    background-image: url(../images/cover.jpg);
    background-position: center;
    background-size: cover;
@@ -94,18 +79,6 @@
         flex-direction: row-reverse;
         align-items: flex-end;
 
-   /* display: flex;
-   flex-wrap: wrap;
-   align-items: flex-end;
-   flex-direction: column-reverse; */ 
- 
-   /* background-color: red; */
-   /* color: white;
-   height: 320px;
-   display: flex;
-   flex-direction: row-reverse;
-   flex-wrap: wrap;
-   align-items: flex-end; */
 }
 #subtitle{
     margin: 10px 30px;
@@ -113,25 +86,31 @@
   
     /******************************* main *******************************************/
 
+
+    .flex-container{
+      padding: 50px;
+  
+    }
+  
+
     .rows{
 
       display: flex;
-      justify-content: center;
+      margin: 15px;;
+      /* justify-content: center; */
       /* flex: 2 0 50px; */
-      padding: 50px;
+      /* padding: 50px; */
       /* align-items: flex-start;
       max-width: 90%; */
 
     }
-    .About-me{
-
-    }
-
 
     .rows h2{
-      font-size: 40px;
+      font-size: 24px;
       color: var(--header-bg-col);
       margin-right: 25px;
+      width: 10%;
+
 
 
     }
@@ -144,17 +123,12 @@
 
     .content{
 
-      max-width: 50%;
+      width:90%;
       font-size: 15px;
+      /* border-right: 5px solid red; */
     }
 
 
-
-    .Work{
-
-      /* display: flex; */
-
-    }
 
 
 /* .boxes:nth-of-type(1) {
@@ -165,22 +139,85 @@
   padding: 10px;
   width: 100px; height: 100px;
 } */
-    
-.boxes {
-  /* flex-grow: 25; */
-  background: url("../images/python.jpg") no-repeat;
+
+.projects{
+  background-color: blue;
+
+}
+
+.project_1 {
 
 
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px;
+  background-image: url("../images/php.jpg");
+  background-repeat: no-repeat;
+  background-size: 710px 444px;
+  /* background-position: 50% 50%; */
+  height: 30vh;
+ 
+
+
+}
+.project_2 {
+
+
+  background-image: url("../images/java.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 50% 50%; */
+  height: 30vh;
+
+
+
+}
+.project_3{
+
+
+  background-image: url("../images/python.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 50% 50%; */
+  height: 30vh;
+
+
+}
+.project_4 {
+
+
+  background-image: url("../images/js.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 50% 50%; */
+  height: 30vh;
+
+
+
+}
+.project_5 {
+
+
+  background-image: url("../images/c_sharp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 50% 50%; */
+  height: 30vh;
+
+
 
 }
     
 
 
    
+.Contact a {
+  color:var(--header-bg-col);
+  padding: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--header-bg-col);
+  padding-bottom: 8px;
+  font-size: 15px;
+  /* margin: 10px; */
 
+}
 
 
  
@@ -210,7 +247,7 @@ a:link, a:visited {
   .Contact nav{
           
     display: flex; /* used in this case to leave the links in row level and not change to colum*/
-    /* justify-content: center; */
+    justify-content: space-between;
     flex-wrap: wrap;
 
   
@@ -277,7 +314,7 @@ a:link, a:visited {
     .rows> .content {
 
           border-left: none;
-          width: 100%;
+          /* width: 100%; */
           padding-left: 0;
           padding-top: 25px;
                             
@@ -289,9 +326,7 @@ a:link, a:visited {
                   
                       }
 
-        .content{
-          max-width: none;
-        }
+
       
         }
 
