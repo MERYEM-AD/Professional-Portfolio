@@ -23,7 +23,15 @@ Creation a repository in GitHub:
 * Pushing to the repository in GitHub. 
 
 # Application's Screenshoot:
-![Screenshoot-app](images/Screenshoot-app.PNG)
+
+* Desktop screen :
+![Screenshoot-Desktop](images/Screenshoot-app.PNG)
+
+* Tablet screen :
+![Screenshoot-Tablet](images/Screenshoot-app.PNG)
+
+* Mobile screen :
+![Screenshoot-Mobile](images/Screenshoot-app.PNG)
 
 # Links :
 
