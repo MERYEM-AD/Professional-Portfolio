@@ -25,13 +25,13 @@ Creation a repository in GitHub:
 # Application's Screenshoot:
 
 * Desktop screen :
-![Screenshoot Desktop](assets/images/Screenshoot-Desktop.PNG)
+![Screenshoot-Desktop](assets/images/Screenshoot-Desktop.png)
 
 * Tablet screen :
-![Screenshoot Tablet](assets/images/Screenshoot-Tablet.PNG)
+![Screenshoot-Tablet](assets/images/Screenshoot-Tablet.png)
 
 * Mobile screen :
-![Screenshoot Mobile](assets/images/Screenshoot-Mobile.PNG)
+![Screenshoot-Mobile](assets/images/Screenshoot-Mobile.png)
 
 # Links :
 
