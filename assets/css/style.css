@@ -19,20 +19,19 @@
   
   body {
     /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    font-family: 'revert',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   
     /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
     font-size: 1.75rem;
     line-height: 1.5;
     color: var(--header-bg-col);
-    /* color: var(--gin);
-    background-color: var(--outer-space); */
+
   }
   
 
 
-  .header{
+  .header,footer{
     background-color:var(--header-bg-col);
     display: flex;
     flex-direction: row; /* Default*/
@@ -59,6 +58,8 @@
     box-shadow:0 5px 3px -3px  var(--header-name-col);
 
   }
+
+ 
 
 
     /************************** Cover image ******************************/
@@ -96,15 +97,18 @@
   .rows{
 
       display: flex;
-      margin: 50px;;
+      margin: 50px;
+      align-items: self-start;
 
     }
 
   .rows h2{
-      font-size: 24px;
+      font-size: 30px;
       color: var(--header-bg-col);
       margin-right: 25px;
+      text-align: end;
       width: 20%;
+      
   }
 
   .rows > .content  {
@@ -126,6 +130,10 @@
    flex-direction: row-reverse;
     justify-content: center;
 
+  }
+  .projects a{
+    display:contents;
+    text-decoration: none;
   }
   .subject{
 
@@ -159,13 +167,13 @@
   .project_4 {
 
 
-  background-image: url("../images/js.jpg");
+  background-image: url("../images/java.jpg");
 
   }
   .project_5 {
 
 
-  background-image: url("../images/java.jpg");
+  background-image: url("../images/html.jpg");
   flex: 1 0 80%;
   }
 
@@ -180,7 +188,9 @@
   width: 95px;
   height: 33px;
   text-align: center;
-  right: 1px;
+    top: 136px;
+    right: 1px;
+    border-radius: 15px 50px 30px;
   }
 
   .Contact nav{
@@ -231,9 +241,19 @@
 
   }
   .projects *:hover{
+    color: var(--header-name-col);
+    background-color: var(--header-bg-col);
     box-shadow: 0 0 5px 5px var(--header-name-col);
     transition: all 0.5s ease;
   }
+
+  #Up-icon img{
+
+    width: 50px;
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+}
   
 
 /********************************************** Media Query Code  ************************************/
@@ -281,6 +301,7 @@
 
       border-bottom: 5px solid var(--header-bg-col);
       width: 100%;
+      text-align:unset;
               
     }
 
