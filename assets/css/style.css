@@ -149,31 +149,31 @@
 
   .project_1 {
 
-   background-image: url("../images/php.jpg");
+   background-image: url("../images/Day_Planner.png");
    }
 
   .project_2 {
 
-  background-image: url("../images/c_sharp.jpg");
+  background-image: url("../images/Weather_Dashboard.png");
 
   }
 
 
   .project_3{
 
-  background-image: url("../images/python.jpg");
+  background-image: url("../images/Coding_Quiz.png");
   }
 
   .project_4 {
 
 
-  background-image: url("../images/java.jpg");
+  background-image: url("../images/Password_generator.png");
 
   }
   .project_5 {
 
 
-  background-image: url("../images/html.jpg");
+  background-image: url("../images/food_trackerAPP.png");
   flex: 1 0 80%;
   }
 
@@ -185,12 +185,12 @@
   .header_proj5{
   color: var(--header-bg-col);
   background-color: var(--header-name-col);
-  width: 95px;
-  height: 33px;
+  /* width: 95px; */
+  /* height: 33px; */
   text-align: center;
-    top: 136px;
-    right: 1px;
-    border-radius: 15px 50px 30px;
+    top: 90%;
+    /* left: 1px; */
+    /* border-radius: 15px 50px 30px; */
   }
 
   .Contact nav{
@@ -259,8 +259,8 @@
 /********************************************** Media Query Code  ************************************/
 
 
-
-  @media screen and (max-width: 964px) {
+/* mobile interface */
+  @media screen and (max-width: 964px) {  
 
 
   .header {
@@ -320,12 +320,17 @@
                   
     }
 
-  .projects *{
+  .projects{
 
-    flex:unset;
+    flex-direction: column-reverse;
+    align-items: center;
+
   }
 
-
+  .subject{
+    margin: 25px;
+    flex-basis: unset;
+  }
       
   }
 

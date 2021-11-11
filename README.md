@@ -1,35 +1,27 @@
-# Professional-Portfolio
-Creation of a repository in GitHub:
+# Update Professional-Portfolio
 
-  * Name of repository:Professional Portfolio
-  * Using GitBash to create Directories and files.
+## Apply Requirements :
 
-# Starting to Apply the Acceptance Criteria.
+* The Updated portfolio present :
 
- * Portfolio contains developer's name, image ;
- * The links in the navigation direct to the corresponding section;
- * The Work's section contains titled images of the developer's applications;
- * The developer's first application is larger in size than the others;
- * build a responsive layout that adapts on various screens and devices
+  * My contact information;
+  * The project 1 and 4 homework assignments;
+  * Links to my GitHub profile and LinkedIn profile;
+  * a link to a downloadable PDF of my resume.
 
+* The Updated GitHub Profile has :
 
-# Extra devlopping code :
+  * An avatar image;
+  * Biography;
+  * My Email address;
+  * Link to my deployed portfolio;
+  * Four pinned repositories which each of them has more than 20 commits.
 
-* I add an icon in the right bottom of the page, that allows the employer to go over the page.
+* Resume Updated.
 
-# GitBash & GitHub:
+* LinkedIn Updated.
 
-* Commit with msg every modification in code.
-* Pushing to the repository in GitHub. 
-
-
-# Application's Screenshoot:
-
-* Desktop screen :
-![Screenshoot-Desktop](assets/images/Screenshoot-Desktop.png)
-
-* Tablet screen :
-![Screenshoot-Tablet](assets/images/Screenshoot-Tablet.png)
+# Application's Mobile Screenshot Interface:
 
 * Mobile screen :
 ![Screenshoot-Mobile](assets/images/Screenshoot-Mobile.png)
