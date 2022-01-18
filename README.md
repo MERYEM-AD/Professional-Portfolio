@@ -16,7 +16,7 @@
   * Biography;
   * My Email address;
   * Link to my deployed portfolio;
-  * Four pinned repositories which each of them has more than 20 commits.
+  * six pinned repositories which each of them has more than 20 commits.
 
 * Resume Updated.
 
