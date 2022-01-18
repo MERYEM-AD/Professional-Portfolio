@@ -61,16 +61,24 @@
 
  
 
+  .header a:hover{
+    color: var(--header-bg-col);
+    transition: all 0.5s ease;
 
+    background: linear-gradient(to left, var(--header-name-col) 50%, var(--header-bg-col) 50%) right;
+    background-size: 200%;
+    cursor: grab;
+
+  }
     /************************** Cover image ******************************/
 
   #cover-img{
 
-   background-image: url(../images/cover.jpg);
+   background-image: url(../images/cover.png);
    background-position: center;
    background-size: cover;
    height: 30vh;
-   /* background-attachment: fixed;  */
+   background-attachment: fixed; 
         /*Turn this section to flexbox */
 
 
@@ -85,167 +93,9 @@
     margin: 10px 30px;
   }
   
-    /******************************* main *******************************************/
-
-
-  .flex-container{
-      padding: 80px;
-  
-  }
-  
-
-  .rows{
-
-      display: flex;
-      margin: 50px;
-      align-items: self-start;
-
-    }
-
-  .rows h2{
-      font-size: 30px;
-      color: var(--header-bg-col);
-      margin-right: 25px;
-      text-align: end;
-      width: 20%;
-      
-  }
-
-  .rows > .content  {
-      border-left: 5px solid var(--header-bg-col);
-      padding-left: 25px;
-  }
-
-  .content{
-
-      width:80%;
-      font-size: 15px;
-  }
-
-
-  .projects{
-
-   display: flex;
-   flex-wrap: wrap-reverse;
-   flex-direction: row-reverse;
-    justify-content: center;
-
-  }
-  .projects a{
-    display:contents;
-    text-decoration: none;
-  }
-  .subject{
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    height: 30vh;
-    width: 200px;
-    margin: 10px;
-    flex-basis: 40%;
-  }
-
-
-  .project_1 {
-
-   background-image: url("../images/Day_Planner.png");
-   }
-
-  .project_2 {
-
-  background-image: url("../images/Weather_Dashboard.png");
-
-  }
-
-
-  .project_3{
-
-  background-image: url("../images/Coding_Quiz.png");
-  }
-
-  .project_4 {
-
-
-  background-image: url("../images/Password_generator.png");
-
-  }
-  .project_5 {
-
-
-  background-image: url("../images/food_trackerAPP.png");
-  flex: 1 0 80%;
-  }
-
-
-  .subject .header_proj5{
-  position: relative;
-  }  
-
-  .header_proj5{
-  color: var(--header-bg-col);
-  background-color: var(--header-name-col);
-  /* width: 95px; */
-  /* height: 33px; */
-  text-align: center;
-    top: 90%;
-    /* left: 1px; */
-    /* border-radius: 15px 50px 30px; */
-  }
-
-  .Contact nav{
-          
-  display: flex; /* used in this case to leave the links in row level and not change to colum*/
-  justify-content: space-between;
-  flex-wrap: wrap;
-   }
-   
-  .Contact a {
-  color:var(--header-bg-col);
-  padding: 20px;
-  text-decoration: none;
-  box-shadow:0 5px 3px -3px  var(--header-bg-col);
-  font-size: 15px;
-
-  }
-
-
  
 
     
-
-
-/*************************Psudo*****************************/
-  
-  .header a:hover{
-    color: var(--header-bg-col);
-    transition: all 0.5s ease;
-
-    background: linear-gradient(to left, var(--header-name-col) 50%, var(--header-bg-col) 50%) right;
-    background-size: 200%;
-    cursor: grab;
-
-  }
-
- 
-
-  .Contact a:hover{
-    color: var(--header-name-col);
-
-    transition: all 0.5s ease;
-
-    background: linear-gradient(to left, var(--header-bg-col) 50%, var(--header-name-col) 50%) right;
-    background-size: 200%;
-    cursor: grab;
-    
-
-  }
-  .projects *:hover{
-    color: var(--header-name-col);
-    background-color: var(--header-bg-col);
-    box-shadow: 0 0 5px 5px var(--header-name-col);
-    transition: all 0.5s ease;
-  }
 
   #Up-icon img{
 
@@ -288,7 +138,7 @@
     align-items: center;
 
     }
-                     /**********************************  Main **************************************/
+                    
     
 
   .rows{
@@ -305,37 +155,183 @@
               
     }
 
-  .rows> .content { /*remove left border for every content has a parent rows */
-
-    border-left: none;
-    padding-left: 0;
-    padding-top: 25px;
-                            
-    }
-
-  .Contact nav{
-          
-     flex-direction: column;
-          
-                  
-    }
-
-  .projects{
-
-    flex-direction: column-reverse;
-    align-items: center;
-
   }
 
-  .subject{
-    margin: 25px;
-    flex-basis: unset;
-  }
-      
-  }
+   /**********************************  Main **************************************/
 
 
+      /**********************************  Sections **************************************/
 
-        
-              
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f6f7;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--header-bg-col);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--header-name-col);
+  bottom: 0;
+  left: 0;
+}
+
+
+  /**********************************  AboutMe **************************************/
+
+.AboutMe {
+  background: #fff;
+}
+.AboutMe .presentation {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.AboutMe .presentation:hover{
+  box-shadow: 0px 2px 15px var(--header-name-col)
+}
+.AboutMe .presentation p{
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.ri-check-double-line:before{
+
+  color: var(--header-name-col);
+}
+
+  /**********************************  work **************************************/
+
+.work {
+  background: #fff;
+}
+.work .project{
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: ghostwhite;
+}
+
+.work .project .pic{
+    overflow: hidden;
+    /* border-radius: 50%; */
+    margin: 0 auto 20px auto;
+}
+
+.work .project .pic:hover{
+  box-shadow: 0px 2px 15px var(--header-name-col);
+}
+.work .project .pic img {
+  transition: ease-in-out 0.3s;
+}
+.work .project:hover img{
+  transform: scale(1.1);
+}
+.work .project h4{
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--header-bg-col);
+}
+.work .project span{
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+  color: purple;
+}
+
+.work .project p{
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+.work .project .Links{
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work .project .Links a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background-color: var(--header-bg-col);
+}
+.work .project .Links a i {
+  color: var(--header-name-col);
+  /* background-color: var(--header-bg-col); */
+  font-size: 16px;
+  margin: 0 2px;
+}
+.work .project .Links a:hover {
+  background: var(--header-bg-col);
+  box-shadow: 0px 2px 15px var(--header-name-col);
+}
+ a{
+  text-decoration: none
+}
+
+.work .project .Links a + a{
+  margin-left: 8px;
+}
+  /**********************************  Contact **************************************/
+
+.contact .info {
+  padding: 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+.contact .info i {
+  font-size: 20px;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  color: var(--header-name-col);
+  background-color: var(--header-bg-col);
+
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--header-bg-col);
+  margin-left:-23px
+}
+
           

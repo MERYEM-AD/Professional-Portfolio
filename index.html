@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Add CSS files -->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -22,9 +26,9 @@
   
             <!-- Navbar -->
       <nav>
-        <a href="#About-me">About Me</a>
-        <a href="#Work">Work</a>
-        <a href="#Contact">Contact</a>
+        <a href="#AboutMe">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
         <a href="assets/documents/MA_RESUME.pdf">Resume</a>
       </nav>
   
@@ -41,112 +45,286 @@
 
        <!-- Main Block-->
 
-       <main class="flex-container">
+         <main id="main">
 
-        <section id="About-me" class="rows">
+     <!-- AboutMe  Section -->
 
-            <h2>About Me </h2>
 
-           <div class="content">
-            <p>Starting for coding in 2013 and got my Bachelor's degree in Engineering of computing and software systems in 2016.
-           </p>
-            <p>3 years of experience in building multiple projects on my own in various languages like PHP, PYTHON, JAVA, C#, NET.
-            </p>
-              <p> 
-                I Have creativity side and I am curious to learn and make new challenges in the programming field.
-              </p>
+     <section id="AboutMe" class="AboutMe">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" >
+              <h2>About me</h2>
+            </div>
+          </div>
+          <div class="col-lg-8">
+                <div class="presentation" >  
+                    <p><i class="ri-check-double-line"></i> After getting my high school diploma in  Life and Earth Sciences,
+                      I m  always have a curiosity about coding and wondering how websites build, Fortunately, I got the chance to complete my studies in the high school of technology that belongs to the famous University Cadi Ayyad in Morroco.
+                      </p>
+                      <p><i class="ri-check-double-line"></i> During 3 years of education and forming at various program languages like PHP. Python, CSharp, Java..., I got my Bachelor's degree in Engineering Of computing and software systems.</p>
+                       <p><i class="ri-check-double-line"></i> Now, I'm currently taking classes in Full Stack Web Development at The University of New Hampshire in order to achieve the certification as a Full Stack Web Developer that mastering  HTML5, CSS3, Javascript, Jquery, Node Js, Express Js, Mysql Database, NoSQL, React, agile methodology, MongoDB, MySQL, Computer Science, Git, and more.</p>
+                    </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- End AboutMe Section -->
+
+    <!--  Work Section  -->
+
+
+    <section id="work" class="work">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" >
+              <h2>Work</h2>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+
+              <div class="col-lg-12">
+                <div class="project" >
+                  <div class="pic"><img src="assets/images/groceryApp.png" class="img-fluid" alt=""></div>    
+                    <h4>Flash Shopping</h4>
+                    <span> Grocery Application allows users to search for products from a store and then organizes the products in their cart by aisle.</span>
+                    <div class="Links">
+                      <a href="https://github.com/RyanCarey18/grocery-application"><i class="ri-git-repository-line"></i></a>
+                      <a href="https://vast-ocean-43647.herokuapp.com/"><i class="ri-window-line"></i></a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="project" >
+                  <div class="pic"><img src="assets/images/Tech_blog.png" class="img-fluid" alt=""></div>    
+                
+                    <h4>Tech Blog</h4>
+                    <span> Tech Blog presents a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.</span>
+                    <div class="Links">
+                      <a href="https://github.com/MERYEM-AD/Tech-Blog"><i class="ri-git-repository-line"></i></a>
+                      <a href="https://guarded-reaches-18279.herokuapp.com/"><i class="ri-window-line"></i></a>
+
+
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="project" >
+                  <div class="pic"><img src="assets/images/Note_Taker.png" class="img-fluid" alt=""></div>    
+                    <h4>Note Tacker</h4>
+                    <span>Note Tacker Application can be used to write and save notes.</span>
+                    <div class="Links">
+                      <a href="https://github.com/MERYEM-AD/Note-Taker"><i class="ri-git-repository-line"></i></a>
+                      <a href="https://notetaker200.herokuapp.com/"><i class="ri-window-line"></i></a>
+
+<br><br><br>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="project" >
+                  <div class="pic"><img src="assets/images/food_trackerAPP.png" class="img-fluid" alt=""></div>    
+                    <h4>Food tracker</h4>
+                    <span>
+                      Food tracker is a Web-based application that allows user to track calories on a daily basis through calculate the calories and will notify the user how many calories they need to maintain, lose, or gain weight.</span>
+                    <div class="Links">
+                      <a href="https://github.com/MERYEM-AD/food-tracker"><i class="ri-git-repository-line"></i></a>
+                      <a href="https://meryem-ad.github.io/food-tracker/"><i class="ri-window-line"></i></a>
+
+                      <br><br><br><br><br><br>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 mt-4">
+                <div class="project" >
+                  <div class="pic"><img src="assets/images/TPG.png" class="img-fluid" alt=""></div>   
+                    <h4>Team Profile Generator</h4>
+                    <span>Team Profile Generator used to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.</span>
          
+                    <div class="Links">
+                      <a href="https://github.com/MERYEM-AD/Team-Profile-Generator"><i class="ri-git-repository-line"></i></a>
 
+
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="project" >
+                  <div class="pic"><img src="assets/images/Employee_Tracker.png" class="img-fluid" alt=""></div>   
+                    <h4>Employee Tracker</h4>
+                    <span>
+                      The Application presents a content management systems (CMS) interface that manages a company's employee database using Node.js, Inquirer, and MySQL.  
+                    </span>
+         
+                    <div class="Links">
+                      <a href="https://github.com/MERYEM-AD/Employee-Tracker"><i class="ri-git-repository-line"></i></a>
+                      <br><br><br><br>
+
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 mt-4">
+                <div class="project" >
+                  <div class="pic"><img src="assets/images/readme.png" class="img-fluid" alt=""></div>    
+                    <h4> Professional README Generator</h4>
+                    <span>
+                      Professional README Generator is  a command-line application that dynamically generates a professional README.md file from a user's input . 
+                    </span>
+                    <div class="Links">
+                      <a href="https://github.com/MERYEM-AD/Professional-README-Generator"><i class="ri-git-repository-line"></i></a>
+
+                      <br><br><br><br><br><br>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 mt-4">
+                <div class="project" >
+                  <div class="pic"><img src="assets/images/Weather_Dashboard.png" class="img-fluid" alt=""></div>    
+                    <h4>Weather Dashboard</h4>
+                    <span>Weather Dashboard used to see the weather outlook for multiple cities</span>
+                    <div class="Links">
+                      <a href="https://github.com/MERYEM-AD/Weather-Dashboard"><i class="ri-git-repository-line"></i></a>
+                      <a href="https://meryem-ad.github.io/Weather-Dashboard/Webpages/index.html"><i class="ri-window-line"></i></a>
+
+                      <br><br><br><br><br><br>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 mt-4">
+                <div class="project" >
+                  <div class="pic"><img src="assets/images/Day_Planner.png" class="img-fluid" alt=""></div>    
+                    <h4>Day Scheduler</h4>
+                    <span>Day Scheduler is a calendar application that allows a user to save events for each hour of the day</span>
+                    <div class="Links">
+                      <a href="https://github.com/MERYEM-AD/Day-Scheduler"><i class="ri-git-repository-line"></i></a>
+                      <a href="https://meryem-ad.github.io/Day-Scheduler/Develop/index.html"><i class="ri-window-line"></i></a>
+
+                      <br><br><br><br>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-6 mt-4">
+              <div class="project" >
+                <div class="pic"><img src="assets/images/Coding_Quiz.png" class="img-fluid" alt=""></div>    
+                  <h4>Coding Quiz</h4>
+                  <span>Coding Quiz is a timed quiz application on JavaScript fundamentals that stores high scores</span>
+                  <div class="Links">
+                    <a href="https://github.com/MERYEM-AD/Code-Quiz"><i class="ri-git-repository-line"></i></a>
+                    <a href="https://meryem-ad.github.io/Code-Quiz/webpages/index.html"><i class="ri-window-line"></i></a>
+
+                    <br><br><br><br><br>
+              </div>
+            </div>
           </div>
 
-        </section>
 
 
-        <section id="Work" class=" rows"> 
-           
-          <h2>Work </h2>
+          <div class="col-lg-6 mt-4">
+            <div class="project" >
+              <div class="pic"><img src="assets/images/Password_generator.png" class="img-fluid" alt=""></div>    
+                <h4>Password Generator</h4>
+                <span>Password Generator is an application that enables employees to generate random passwords based on criteria that they’ve selected. </span>
+                <div class="Links">
+                  <a href="https://github.com/MERYEM-AD/Password-Generator"><i class="ri-git-repository-line"></i></a>
+                  <a href="https://meryem-ad.github.io/Password-Generator/Develop/index.html"><i class="ri-window-line"></i></a>
 
-          
-          
-             <div class="content"> 
-
-        <div class="projects">
-                  
-                  <a href="https://meryem-ad.github.io/Day-Scheduler/Develop/index.html">
-                      <div class="project_1 subject" >
-                    <h4 class="header_proj5">Day Scheduler</h4> 
-                      </div> 
-                  </a>
-
-                  <a href="https://meryem-ad.github.io/Weather-Dashboard/Webpages/index.html">
-
-                  <div class="project_2 subject" >
-                    <h4 class="header_proj5">Weather Dashboard</h4> 
-                  </div>
-                  </a>
-
-                  <a href="https://meryem-ad.github.io/Code-Quiz/webpages/index.html">
-
-                  <div class="project_3 subject">
-                    <h4 class="header_proj5">Coding Quiz</h4> 
-                  </div>
-
-                  </a>
-                  
-
-                  <a href="https://meryem-ad.github.io/Password-Generator/Develop/index.html">
-
-                  <div class="project_4 subject">
-                    <h4 class="header_proj5">Password Generator</h4> 
-                  </div>
-
-                  </a>
-                <a href="https://meryem-ad.github.io/food-tracker/"> <div class="project_5 subject">
-                    <h4 class="header_proj5">Food tracker</h4>
-                  </div>
-                  </a>
-
+                  <br><br><br><br>
+            </div>
+          </div>
         </div>
-     
-             </div>
 
-        </section>
-
-        
-
-
-
-        <section id="Contact" class="Contact rows ">
-
-        <h2>Contact </h2>
-        <div class="content">
-        <nav>
-          <a href="tel:+6038581069">(603) 858 10 69</a>
-          <a href="mailto:adiri.meryem.mw@gmail.com">adiri.meryem.mw@gmail.com</a>
-          <a href="https://github.com/MERYEM-AD">Github</a>
-          <a href="https://www.linkedin.com/in/meryem-adiri-32748221b/">Linkedin</a>
-
-
-        </nav>
-
+          </div>
         </div>
-        
 
-        </section>
+      </div>
+    </section>
+    
+    <!-- End Work Section -->
 
-       </main>
+    <!--  Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title">
+              <h2>Contact </h2>
+            </div>
+          </div>
+
+          <div class="col-lg-8" >
+            <div class="row">
+              <div class="col-lg-6 mt-4">
+                <div class="info">
+                  <i class="ri-github-line"></i>
+               <a href="https://github.com/MERYEM-AD"><h4>Github</h4></a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="info w-100 mt-4">
+                  <i class="ri-linkedin-fill"></i>
+               <a href="https://www.linkedin.com/in/meryem-adiri-32748221b/"><h4>Linkedin</h4></a>   
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 mt-4">
+                <div class="info">
+                  <i class="ri-mail-line"></i>
+                <a href="mailto:adiri.meryem.mw@gmail.com"> <h4>Email</h4></a> 
+                  
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="info w-100 mt-4">
+                  <i class="ri-phone-line"></i>
+                 <a href="tel:+6038581069"> <h4>Phone</h4></a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+  </main>
+  
+  <!-- End main -->
 
        <!-- Footer -->
 
     <footer class="footer">
-
-        <!-- Extra: add a fixed linked icon image that allows going up of the page  -->
         <section id="Up-icon">
           <a href="#header"><img src="assets/images/Up-icon.png" alt="Up-icon" title="Go Up"></a>
         </section> 
 
     </footer>
-
-    
   </body>
+  <!-- bootstrap Js -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

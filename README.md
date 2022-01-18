@@ -5,10 +5,10 @@
 
 * The Updated portfolio present :
 
-  * My contact information;
-  * The project 1 and 4 homework assignments;
-  * Links to my GitHub profile and LinkedIn profile;
-  * a link to a downloadable PDF of my resume.
+  * My Bio;
+  * Two projects and nine homeworks assignments;
+  * Link to a downloadable PDF of my resume;
+   * My contact information [GitHub ,LinkedIn , Email ,Phone].
 
 * The Updated GitHub Profile has :
 
