@@ -334,4 +334,16 @@ section {
   margin-left:-23px
 }
 
+
+
+  /**********************************  Footer  **************************************/
           
+.footer  {
+  justify-content: center;
+  align-items: end;
+  padding: 0;
+}
+
+.footer p {
+  color: var(--header-name-col);
+}
